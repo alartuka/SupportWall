@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% block title %}Home {% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <title>Supportwall</title>
+
+    <!-- STYLE -->
+    <style>
+      body {
+        font-family: 'Sen', sans-serif;
+      }
+
+      .titlecard {
+        margin-left: 200px;
+        margin-top: 65px;
+        width: 695px;
+        height: 236px;
+        background: linear-gradient(112.03deg, #7ED1FF 0%, #6FA8FF 100%);        
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 28.661px;
+        position: relative;
+      }
+
+      .logocard {
+        margin-left: 500px;
+        margin-top: -25px;
+        width: 695px;
+        height: 236px;
+        background: linear-gradient(112.03deg, #62AAFF 0%, #4690FF 100%);       
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 28.661px;
+      }
+
+      .container h5{
+        margin-left: 32px;
+        color: white;
+        font-size: 50px;
+      }
+
+      .container h3{
+        margin-left: 32px;
+        color: white;
+        font-size: 50px;
+        font-weight: 700;
+      }
+
+      .introtext {
+        margin-right: 25px;
+        color: white;
+        font-size: 25px;
+      }
+
+      a.button {
+        width: 271px;
+        height: 51px;
+        margin-top: 4px;
+        background: rgba(26, 33, 188, 0.1);
+        border-radius: 99px;
+        color: #1534CA;
+        border: none;
+        text-align: center;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        text-decoration: none;
+        color: initial;
+        padding: 15px 0;
+      }
+
+      .intro {
+        margin-left: 50px;
+        margin-top: 45px;
+        margin-right: 50px;
+      }
+
+      .intro p {
+        font-size: 20px;
+      }
+
+      .bold {
+        font-weight: 700;
+      }
+
+      .extraBold {
+        font-weight: 800;
+      }
+
+      .centerHorizontally {
+        display: block;
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+      }
+
+      .centerVertically {
+        padding: 45px 0;
+      }
+    </style>
+  </head>
+
+  <body>
+  <div class="titlecard">
+    <div class="container centerVertically">
+      <h5>Welcome to</h5>
+      <h3>Support Wall.</h3>
+    </div>
+  </div>
+  <div class="logocard">
+    <!-- LOGO img -->
+    <img src='/static/logo.svg' class='centerHorizontally centerVertically'></img>
+  </div>
+  </div>
+  <div class="intro">
+    <div>
+      <a href='/quotes' class='button centerVertically'>Click to get started!</a>
+    </div>
+    <hr color="#1534CA">
+    <br>
+    <h1 class="extraBold">We are your anonymous support system.</h1>
+    <br>
+    <p>We connect you with thousands of others without identifying <br>
+      information. Rant, read, or share your happiness-- Support <br>
+      Wall is here for you to let it all out.</p>
+    <br>
+    <h4 class="bold">To start, visit one of our categorical headers by clicking on Notes.</h4>
+    <br>
+  </div>
+  </body>
+</html>
+
+{% endblock body %}
+
