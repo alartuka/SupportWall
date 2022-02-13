@@ -2,9 +2,9 @@
 
 ### TechNova Hackathon Submission - Aug2021
 
-**Support Wall is a website that offers categories where you can add sticky notes anonymously. These categories include Ranting, Jokes, Family, School and good news, where you can add sticky notes under a word limit.**
+Support Wall is a website that offers categories where you can add sticky notes anonymously. These categories include Ranting, Jokes, Family, School and good news, where you can add sticky notes under a word limit.
 
-![home](https://snehal-adbol.snehaladbol.repl.co/assets/img/project2.png)
+![home](https://snehal-adbol.snehaladbol.repl.co/assets/img/project2.png) *Website is not live yet*
 
 ## What it does ✨ 
 
@@ -14,7 +14,7 @@ More information can be found on [Devpost](https://devpost.com/software/support-
 
 ## Demo 
 
-<!-- [![Watch the video](https://img.youtube.com/vi/55NHIiYnHVo/maxresdefault.jpg)](https://drive.google.com/file/d/1TVLNBvHY7ZHFnrj2XIkfUws49N3sC2wp/view) -->
+[Watch the video](https://user-images.githubusercontent.com/80016785/153739234-c23b69a6-5187-4a1d-8998-0af04719a264.mp4)
 
 
 #
