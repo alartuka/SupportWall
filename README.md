@@ -14,7 +14,7 @@ More information can be found on [Devpost](https://devpost.com/software/support-
 
 ## Demo 
 
-[![Watch the video](https://img.youtube.com/vi/55NHIiYnHVo/maxresdefault.jpg)](https://drive.google.com/file/d/1TVLNBvHY7ZHFnrj2XIkfUws49N3sC2wp/view)
+<!-- [![Watch the video](https://img.youtube.com/vi/55NHIiYnHVo/maxresdefault.jpg)](https://drive.google.com/file/d/1TVLNBvHY7ZHFnrj2XIkfUws49N3sC2wp/view) -->
 
 
 #
