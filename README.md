@@ -4,7 +4,7 @@
 
 Support Wall is a website that offers categories where you can add sticky notes anonymously. These categories include Ranting, Jokes, Family, School and good news, where you can add sticky notes under a word limit.
 
-![home](https://snehal-adbol.snehaladbol.repl.co/assets/img/project2.png) *Website is not live yet*
+![home](https://snehal-adbol.snehaladbol.repl.co/assets/img/project2.png) *Website is currently not live*
 
 ## What it does ✨ 
 
