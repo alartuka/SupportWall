@@ -1,0 +1,242 @@
+{% extends 'base.html' %}
+{% block title %}Ranting {% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
+
+<title>Ranting</title>
+
+  <style>
+    body 
+    {
+      font-family: 'Sen', sans-serif;
+    }
+
+    .description {
+      margin-left: 45px;
+      margin-top: 55px;
+    }
+
+    .description h1{
+      font-weight: 800;
+      font-size: 50px;
+    }
+
+    .description h5{
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .card {
+      background: linear-gradient(112.03deg, #7ED1FF 0%, #6FA8FF 100%);
+      color: white;
+      border: none;
+      padding: 10px;
+      margin: 5px; 
+      width: 400px;
+      display: inline-block;
+      font-size: 20px;
+    }
+  
+    .card-columns {
+      margin-left: 125px;
+    }
+
+    .input {
+      box-sizing: border-box;
+      width: 50%;
+      height: 150px;
+      border: 2px solid #7ED1FF;
+      border-radius: 4px;
+      padding: 1%;
+      writing-mode:unset;
+      margin-left: 25%;
+			margin-right: 10%;
+    }
+
+		.padding {
+			padding: 1%;
+		} 
+
+    .inputHolder {
+      width: 100%;
+      border: none;
+    }
+    .button {
+      width: 271px;
+      height: 51px;
+      margin-top: 4px;
+      background: rgba(26, 33, 188, 0.1);
+      border-radius: 99px;
+      color: #1534CA;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      color: initial;
+      padding: 15px;
+    } 
+    
+    .buttonHolder {
+			width:100%;
+		}
+
+/* Card input style */
+    #list div{
+        background: linear-gradient(112.03deg, #7ED1FF 0%, #6FA8FF 100%);
+	    color: white;
+        border: none;
+        border-radius: 28.661px;
+        padding: 10px;
+        margin: 5px; 
+        width: 400px;
+        height: 400px;
+        display: inline-block;
+        font-size: 20px;
+    }
+  </style>
+
+<script>
+  // src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"
+  
+  
+  function saveList(){
+    localStorage.storedList = document.getElementById("list").innerHTML;
+  }
+  function addItem(){
+    var newItem = document.createElement("div");
+    var text = document.getElementById("userInput").value;
+    newItem.innerHTML = `
+    <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+            <p>` + text + `</p>
+            <footer class="blockquote-footer">
+                <small class="text-white">
+                Quote by <cite title="Source Title">anonymous</cite>
+                </small> 
+            </footer>
+        </blockquote>
+    </div> `
+    document.getElementById("card-columns").appendChild(newItem);
+    saveList();
+    document.getElementById("userInput").value = "";
+  }
+
+  function loadList(){
+    document.getElementById("list").innerHTML = localStorage.storedList;
+  }
+  
+  </script>
+
+</head>
+
+<body>
+
+  <div class="description">
+    <h1>Welcome to the Ranting SupportWall!</h1>
+    <br>
+    <h5>Let it all out. </br></br></h5>
+  </div>
+
+<div class="inputHolder">
+    <textarea  class = "input padding" type="text" id="userInput" value ="Enter a new sticky here" onfocus="this.value=''"> </textarea>
+  </div> 
+  <br/>
+  
+  <div class="buttonHolder">
+    <input class = "button padding" type="button" value="Add Note"onclick="addItem();"/>
+  </div>
+  <div id="list" class="padding"></div>
+  
+  <script>
+  
+    if(localStorage.storedList){
+      loadList();
+    }
+  </script>
+
+<br>
+<hr/>
+<br>
+
+<!-- Displayed Sample Cards -->
+<div id="card-columns" class="card-columns">
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-white">
+          Quote by <cite title="Source Title">anonymous</cite>
+        </small> 
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. </p>
+      <footer class="blockquote-footer">
+        <small class="text-white">
+          Quote by <cite title="Source Title">anonymous</cite>
+        </small> 
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-white">
+          Quote by <cite title="Source Title">anonymous</cite>
+        </small> 
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. </p>
+      <footer class="blockquote-footer">
+        <small class="text-white">
+          Quote by <cite title="Source Title">anonymous</cite>
+        </small> 
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-white">
+          Quote by <cite title="Source Title">anonymous</cite>
+        </small> 
+      </footer>
+    </blockquote>
+  </div>
+  <div class="card p-3">
+    <blockquote class="blockquote mb-0 card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+      <footer class="blockquote-footer">
+        <small class="text-white">
+          Quote by <cite title="Source Title">anonymous</cite>
+        </small> 
+      </footer>
+    </blockquote>
+  </div>
+</div>
+
+</body>
+</html>
+
+{% endblock body %}
+
