@@ -23,5 +23,5 @@ admin.site.site_title = "Welcome to Supportwall Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls'))
+    path('', include('home.urls', name='home')),
 ]

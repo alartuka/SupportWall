@@ -4,10 +4,10 @@ from home.models import Contact
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html') 
+    return render(request, 'home/index.html') 
 
 def about(request):
-    return render(request, 'about.html')
+    return render(request, 'home/about.html')
 
 def contact(request):
     if request.method == 'POST':
