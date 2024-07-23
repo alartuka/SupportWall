@@ -19,5 +19,5 @@ More information can be found on [Devpost](https://devpost.com/software/support-
 
 #
 
-*Supportwall by Snehal Adbol, Tuka Alarbi, Zhuo en chua, Aileen Luo*
+*Supportwall by Snehal Adbol, Tuka Alsharief [fka Tuka Alarbi], Zhuo en chua, Aileen Luo*
 > We are your anonymous support system. Rant, read, or share your happiness-- Support Wall is here for you to let it all out.
